@@ -22,8 +22,8 @@ public class AboutUs extends AppCompatActivity {
         MainActivity.openDrawer(drawerLayout);
     }
 
-    public void ClickLogo(View view){
-        MainActivity.closeDrawer(drawerLayout);
+    public void ClickProfile(View view){
+        MainActivity.redirectActivity(this, ProfileActivity.class);
     }
 
     public void ClickHome(View view){
@@ -37,6 +37,8 @@ public class AboutUs extends AppCompatActivity {
     public void ClickAboutUs(View view){
         recreate();
     }
+
+    public void ClickSettings(View view){MainActivity.redirectActivity(this,SettingsActivity.class);}
 
     public void ClickLogout(View view){
         MainActivity.logout(this);

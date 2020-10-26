@@ -9,11 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.dp201.creditapp.SettingsActivity"></activity>
-        <activity android:name="com.dp201.creditapp.CalendarActivity" />
-        <activity android:name="com.dp201.creditapp.AboutUs" />
-        <activity android:name="com.dp201.creditapp.Dashboard" />
-        <activity android:name="com.dp201.creditapp.MainActivity">
+        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".CalendarActivity" />
+        <activity android:name=".AboutUs" />
+        <activity android:name=".Dashboard" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

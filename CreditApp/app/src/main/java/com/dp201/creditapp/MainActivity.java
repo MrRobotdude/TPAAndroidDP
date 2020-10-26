@@ -31,8 +31,8 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout.openDrawer(GravityCompat.START);
     }
 
-    public void ClickLogo(View view){
-        closeDrawer(drawerLayout);
+    public void ClickProfile(View view){
+        redirectActivity(this,CalendarActivity.class);
     }
 
     public static void closeDrawer(DrawerLayout drawerLayout) {
@@ -51,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
     public void ClickAboutUs(View view){
         redirectActivity(this,AboutUs.class);
     }
+
+    public void ClickSettings(View view){redirectActivity(this,SettingsActivity.class);}
 
     public void ClickLogout(View view){
         logout(this);
@@ -94,4 +96,7 @@ public class MainActivity extends AppCompatActivity {
         closeDrawer(drawerLayout);
     }
 
+    public void ClickLoginPage(View view) {
+        redirectActivity(this,LoginActivity.class);
+    }
 }

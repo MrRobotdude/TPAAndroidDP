@@ -6,14 +6,14 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import android.os.Bundle;
 import android.view.View;
 
-public class Dashboard extends AppCompatActivity {
+public class ProfileActivity extends AppCompatActivity {
 
     DrawerLayout drawerLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dashboard);
+        setContentView(R.layout.activity_profile);
 
         drawerLayout = findViewById(R.id.drawer_layout);
     }
@@ -22,21 +22,23 @@ public class Dashboard extends AppCompatActivity {
         MainActivity.openDrawer(drawerLayout);
     }
 
-    public void ClickLogo(View view){
-        MainActivity.closeDrawer(drawerLayout);
+    public void ClickProfile(View view){
+        recreate();
     }
 
     public void ClickHome(View view){
         MainActivity.redirectActivity(this, MainActivity.class);
     }
 
-    public void ClickDashboard(View view){
-        recreate();
+    public void ClickCalendar(View view){
+        MainActivity.redirectActivity(this,CalendarActivity.class);
     }
 
     public void ClickAboutUs(View view){
         MainActivity.redirectActivity(this,AboutUs.class);
     }
+
+    public void ClickSettings(View view){MainActivity.redirectActivity(this,SettingsActivity.class);}
 
     public void ClickLogout(View view){
         MainActivity.logout(this);
@@ -46,5 +48,8 @@ public class Dashboard extends AppCompatActivity {
         super.onPause();
 
         MainActivity.closeDrawer(drawerLayout);
+    }
+
+    public void ClickSaveChanges(View view) {
     }
 }
