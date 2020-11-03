@@ -99,4 +99,10 @@ public class MainActivity extends AppCompatActivity {
     public void ClickLoginPage(View view) {
         redirectActivity(this,LoginActivity.class);
     }
+
+    public void ChangeLanguage(View view) {
+    }
+
+    public void ToggleNightTheme(View view) {
+    }
 }

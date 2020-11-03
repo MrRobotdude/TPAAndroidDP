@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     android:gravity="center_vertical"
     android:padding="12dp"
-    android:background="@color/colorPrimary">
+    android:background="?attr/colorPrimaryDark">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -18,7 +18,7 @@
         android:layout_weight="1"
         android:text="Credit App"
         android:textAlignment="center"
-        android:textColor="#FFFFFF"
+        android:textColor="?attr/colorBackground"
         android:textSize="20sp"
         android:textStyle="bold" />
 
